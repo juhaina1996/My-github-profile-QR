@@ -13,7 +13,7 @@ const QrCode = ({ url, title, text }) => {
       correctLevel: QRCode.CorrectLevel.H,
     });
 
-    el.title = ""; // to remove built-in tooltip in qr-code library
+    el.title = "";
 
     return () => code.clear();
   }, []);
